@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Economy Coefficients",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "macro_to_game": {
+      "type": "object"
+    },
+    "pricing": {
+      "type": "object"
+    },
+    "defaults": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "version",
+    "macro_to_game",
+    "pricing",
+    "defaults"
+  ]
+}

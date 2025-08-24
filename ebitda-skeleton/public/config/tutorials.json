@@ -1,0 +1,26 @@
+{
+  "version": "0.1.0",
+  "scenes": [
+    {
+      "id": "lemonade_stand_intro",
+      "steps": [
+        {
+          "id": "borrow",
+          "text": "Borrow at 8% to buy the stand."
+        },
+        {
+          "id": "improve",
+          "text": "Increase price or cut cost; watch EBITDA rise."
+        },
+        {
+          "id": "micro_breach",
+          "text": "A rain shock hits; survive a tiny covenant scare."
+        },
+        {
+          "id": "exit",
+          "text": "Sell at 6.5\u00d7 multiple; see DPI bump."
+        }
+      ]
+    }
+  ]
+}

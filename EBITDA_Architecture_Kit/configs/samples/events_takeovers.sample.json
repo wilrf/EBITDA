@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0",
+  "events": [
+    {
+      "id": "hostile_bid_public_v1",
+      "rarity": "rare",
+      "trigger": {
+        "type": "public_underpriced"
+      },
+      "timer_days": 7,
+      "text": "Rival launches a hostile.",
+      "choices": [
+        {
+          "id": "adopt_pill",
+          "label": "Adopt poison pill"
+        }
+      ],
+      "touches": [
+        "LPTrust",
+        "Momentum"
+      ]
+    }
+  ]
+}

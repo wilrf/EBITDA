@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/C:\\/**)",
+      "Bash(npm install)",
+      "Bash(npx tsc:*)",
+      "Bash(for file in advanced-auctions.ts financial-modeling.ts lp-management.ts market-dynamics.ts risk-management.ts)",
+      "Bash(do echo \"Processing $file...\")",
+      "Bash(sed:*)",
+      "Bash(done)",
+      "Bash(npm run dev:*)",
+      "Bash(npm install:*)",
+      "Bash(powershell:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

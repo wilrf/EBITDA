@@ -1,0 +1,30 @@
+{
+  "id": "hard_v1",
+  "version": "0.1.0",
+  "gates": {
+    "enable_mezz": true,
+    "enable_2L": true,
+    "enable_covlite": true,
+    "enable_hedging": true,
+    "enable_antitrust": true,
+    "enable_hostile": true,
+    "enable_greenmail": true,
+    "enable_club_deals": true,
+    "enable_pacman": true,
+    "enable_continuation": true,
+    "enable_cyber": true,
+    "enable_labor": true
+  },
+  "multipliers": {
+    "macro_vol": 1.4,
+    "rivals_count": 7,
+    "snipe_odds": 0.2,
+    "spread_adders_bps": 200,
+    "leverage_cap": 4.5,
+    "covenant_headroom_pct": 5,
+    "info_noise": 0.2,
+    "crisis_timer_scale": 0.8,
+    "trust_decay_scale": 1.4,
+    "score_mult": 1.5
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Event Cards & Chains",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "rarity": {
+            "type": "string",
+            "enum": [
+              "common",
+              "uncommon",
+              "rare",
+              "legendary"
+            ]
+          },
+          "trigger": {
+            "type": "object"
+          },
+          "timer_days": {
+            "type": "integer"
+          },
+          "text": {
+            "type": "string"
+          },
+          "choices": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "reqs": {
+                  "type": "object"
+                },
+                "effects": {
+                  "type": "object"
+                },
+                "spawn_event": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "win_if": {
+                  "type": [
+                    "object",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "label"
+              ]
+            }
+          },
+          "touches": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "rarity",
+          "trigger",
+          "timer_days",
+          "text",
+          "choices"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "events"
+  ]
+}

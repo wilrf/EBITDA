@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "trust_memory": {
+    "good_quarter": "+2",
+    "bad_action_range": [
+      -3,
+      -8
+    ]
+  },
+  "flex_bands": {
+    "spread_bps": [
+      50,
+      150
+    ]
+  },
+  "amend_fee_schedule": {
+    "base_bps": 50
+  },
+  "cov_defaults": {
+    "Lmax": 5.0,
+    "Imin": 1.8
+  }
+}

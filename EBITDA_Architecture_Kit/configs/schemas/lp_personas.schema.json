@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LP Personas",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "personas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "patience": {
+            "type": "number"
+          },
+          "fee_sensitivity": {
+            "type": "number"
+          },
+          "esg_strictness": {
+            "type": "number"
+          },
+          "side_letters": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "personas"
+  ]
+}

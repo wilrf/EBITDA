@@ -1,0 +1,44 @@
+{
+  "version": "0.1.0",
+  "events": [
+    {
+      "id": "tsa_dependency_overdue_v1",
+      "rarity": "common",
+      "trigger": {
+        "type": "tsa_overdue",
+        "function": "IT",
+        "days_over": 14
+      },
+      "timer_days": 5,
+      "text": "TSA IT cutover is behind schedule; penalties loom.",
+      "choices": [
+        {
+          "id": "throw_bodies",
+          "label": "Deploy ops bench",
+          "effects": {
+            "ops_capacity": -1
+          }
+        },
+        {
+          "id": "accept_penalty",
+          "label": "Eat the penalty",
+          "effects": {
+            "cash": -250000
+          }
+        },
+        {
+          "id": "delay_close",
+          "label": "Delay cutover",
+          "effects": {
+            "momentum_mult": -0.05
+          }
+        }
+      ],
+      "touches": [
+        "Execution",
+        "Momentum",
+        "Cash"
+      ]
+    }
+  ]
+}

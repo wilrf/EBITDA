@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tutorial Scripts",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "requirement": {
+                  "type": "object"
+                },
+                "success": {
+                  "type": "object"
+                },
+                "fail": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "id",
+                "text"
+              ]
+            }
+          }
+        },
+        "required": [
+          "id",
+          "steps"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "scenes"
+  ]
+}

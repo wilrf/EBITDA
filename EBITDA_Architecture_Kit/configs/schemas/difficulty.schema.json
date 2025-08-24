@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Difficulty Pack",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "gates": {
+      "type": "object",
+      "properties": {
+        "enable_mezz": {
+          "type": "boolean"
+        },
+        "enable_2L": {
+          "type": "boolean"
+        },
+        "enable_covlite": {
+          "type": "boolean"
+        },
+        "enable_hedging": {
+          "type": "boolean"
+        },
+        "enable_antitrust": {
+          "type": "boolean"
+        },
+        "enable_hostile": {
+          "type": "boolean"
+        },
+        "enable_greenmail": {
+          "type": "boolean"
+        },
+        "enable_club_deals": {
+          "type": "boolean"
+        },
+        "enable_pacman": {
+          "type": "boolean"
+        },
+        "enable_continuation": {
+          "type": "boolean"
+        },
+        "enable_cyber": {
+          "type": "boolean"
+        },
+        "enable_labor": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "multipliers": {
+      "type": "object",
+      "properties": {
+        "macro_vol": {
+          "type": "number"
+        },
+        "rivals_count": {
+          "type": "integer"
+        },
+        "snipe_odds": {
+          "type": "number"
+        },
+        "spread_adders_bps": {
+          "type": "integer"
+        },
+        "leverage_cap": {
+          "type": "number"
+        },
+        "covenant_headroom_pct": {
+          "type": "number"
+        },
+        "info_noise": {
+          "type": "number"
+        },
+        "crisis_timer_scale": {
+          "type": "number"
+        },
+        "trust_decay_scale": {
+          "type": "number"
+        },
+        "score_mult": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "gates",
+    "multipliers"
+  ],
+  "additionalProperties": false
+}

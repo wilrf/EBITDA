@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lender Policy",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "trust_memory": {
+      "type": "object"
+    },
+    "flex_bands": {
+      "type": "object"
+    },
+    "amend_fee_schedule": {
+      "type": "object"
+    },
+    "cov_defaults": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "version",
+    "trust_memory",
+    "flex_bands",
+    "amend_fee_schedule",
+    "cov_defaults"
+  ]
+}

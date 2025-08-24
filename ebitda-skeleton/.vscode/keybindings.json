@@ -1,0 +1,24 @@
+// Add these to your VSCode keybindings
+// File > Preferences > Keyboard Shortcuts > Open Keyboard Shortcuts (JSON)
+[
+    {
+        "key": "ctrl+alt+r",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Claude: Review Current File"
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Claude: Debug Current File"
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Claude: Show Recent Changes"
+    },
+    {
+        "key": "ctrl+alt+e",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Claude: Copy TypeScript Errors"
+    }
+]

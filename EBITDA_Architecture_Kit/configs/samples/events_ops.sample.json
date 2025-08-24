@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "events": [
+    {
+      "id": "tsa_dependency_overdue_v1",
+      "rarity": "common",
+      "trigger": {
+        "type": "tsa_overdue"
+      },
+      "timer_days": 5,
+      "text": "TSA IT cutover behind schedule.",
+      "choices": [
+        {
+          "id": "throw_bodies",
+          "label": "Deploy ops bench"
+        }
+      ],
+      "touches": [
+        "Execution"
+      ]
+    }
+  ]
+}

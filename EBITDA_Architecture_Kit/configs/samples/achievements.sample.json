@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "achievements": [
+    {
+      "id": "no_recap_run",
+      "name": "No Recap Run",
+      "desc": "Finish a fund without a recap.",
+      "criteria": {
+        "recaps_used": 0
+      },
+      "score_bonus": 100
+    }
+  ]
+}

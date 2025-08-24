@@ -1,0 +1,32 @@
+{
+  "version": "0.1.0",
+  "achievements": [
+    {
+      "id": "no_recap_run",
+      "name": "No Recap Run",
+      "desc": "Complete a fund without a dividend recap.",
+      "criteria": {
+        "recaps_used": 0
+      },
+      "score_bonus": 100
+    },
+    {
+      "id": "covenant_clean_sheet",
+      "name": "Covenant Clean Sheet",
+      "desc": "No covenant breaches in a fund.",
+      "criteria": {
+        "breaches": 0
+      },
+      "score_bonus": 150
+    },
+    {
+      "id": "hostile_defender",
+      "name": "Hostile Defender",
+      "desc": "Successfully defend against a hostile bid.",
+      "criteria": {
+        "hostile_defended": 1
+      },
+      "score_bonus": 200
+    }
+  ]
+}

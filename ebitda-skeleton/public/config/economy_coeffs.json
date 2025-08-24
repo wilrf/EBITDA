@@ -1,0 +1,43 @@
+{
+  "version": "0.1.0",
+  "macro_to_game": {
+    "M_formula": "0.5*ER + 0.3*G - 0.02*VX; clip(-2,+2)",
+    "R_formula": "0.015*VX + 0.002*(HY-400); clip(0,+3)",
+    "multiple_multiplier": "1 + 0.06*M - 0.03*R",
+    "reputation_bonus": "0.04 * sigmoid((Rep-50)/12)"
+  },
+  "pricing": {
+    "spread_curve_bps": {
+      "b0": 300,
+      "b1_per_0_5x_over": 80,
+      "b2_covlite": 50,
+      "b3_trust_tier_loss": 20,
+      "b4_R_slope": 30,
+      "b5_rep_tier": 20
+    },
+    "fees": {
+      "oid_base_pct": 1.0,
+      "oid_per_R_pct": 0.3,
+      "ticking_fee_bps_range": [
+        50,
+        100
+      ]
+    }
+  },
+  "defaults": {
+    "breach_targets_annual_at_5x": {
+      "easy": [
+        0.02,
+        0.04
+      ],
+      "medium": [
+        0.05,
+        0.08
+      ],
+      "hard": [
+        0.1,
+        0.15
+      ]
+    }
+  }
+}

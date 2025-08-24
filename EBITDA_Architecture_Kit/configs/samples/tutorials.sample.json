@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "scenes": [
+    {
+      "id": "lemonade_stand_intro",
+      "steps": [
+        {
+          "id": "borrow",
+          "text": "Borrow to buy the stand."
+        }
+      ]
+    }
+  ]
+}

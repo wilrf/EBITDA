@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "personas": [
+    {
+      "id": "pension_long_horizon",
+      "patience": 0.8,
+      "fee_sensitivity": 0.6,
+      "esg_strictness": 0.5,
+      "side_letters": {
+        "reporting": "enhanced"
+      }
+    }
+  ]
+}

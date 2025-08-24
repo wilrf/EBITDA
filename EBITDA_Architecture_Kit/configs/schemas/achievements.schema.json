@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Achievements & Badges",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "achievements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "desc": {
+            "type": "string"
+          },
+          "criteria": {
+            "type": "object"
+          },
+          "score_bonus": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "criteria"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "achievements"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Rival Archetypes",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "archetypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "snipe_odds": {
+            "type": "object",
+            "properties": {
+              "base": {
+                "type": "number"
+              },
+              "hot_sector_bonus": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "base",
+              "hot_sector_bonus"
+            ]
+          },
+          "hostile_pref": {
+            "type": "number"
+          },
+          "leak_rate": {
+            "type": "number"
+          },
+          "discipline": {
+            "type": "number"
+          },
+          "legal_aggressiveness": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "archetypes"
+  ]
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBITDA Claude Bookmarklets - Easy Install</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #718096;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .instructions {
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        .instructions h2 {
+            color: #4a5568;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .instructions ol {
+            padding-left: 20px;
+            color: #4a5568;
+        }
+        
+        .instructions li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .bookmarklets {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .bookmarklet {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .bookmarklet:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .bookmarklet a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            display: block;
+            padding: 15px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+            border: 2px dashed rgba(255,255,255,0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .bookmarklet a:hover {
+            background: rgba(255,255,255,0.3);
+            border-color: white;
+        }
+        
+        .bookmarklet .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .bookmarklet .description {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        
+        .warning {
+            background: #fed7d7;
+            border-left: 4px solid #fc8181;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 8px;
+            color: #742a2a;
+        }
+        
+        .success {
+            background: #c6f6d5;
+            border-left: 4px solid #48bb78;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            color: #22543d;
+            display: none;
+        }
+        
+        .keyboard-shortcuts {
+            background: #edf2f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .keyboard-shortcuts h3 {
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+        
+        .shortcuts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        
+        .shortcut {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .key {
+            background: white;
+            border: 1px solid #cbd5e0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: 600;
+            color: #4a5568;
+        }
+        
+        code {
+            background: #edf2f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 EBITDA Claude Power Tools</h1>
+        <p class="subtitle">Drag these bookmarklets to your bookmarks bar for instant access!</p>
+        
+        <div class="instructions">
+            <h2>📖 How to Install:</h2>
+            <ol>
+                <li><strong>Show your bookmarks bar:</strong> Press <code>Ctrl+Shift+B</code> (Windows/Linux) or <code>Cmd+Shift+B</code> (Mac)</li>
+                <li><strong>Drag the buttons below</strong> to your bookmarks bar</li>
+                <li><strong>Go to Claude.ai</strong> and click any bookmarklet to use it!</li>
+                <li><strong>Alternative:</strong> Right-click a button → "Bookmark This Link" → Save to Bookmarks Bar</li>
+            </ol>
+        </div>
+        
+        <div class="bookmarklets">
+            <div class="bookmarklet">
+                <div class="icon">🚀</div>
+                <a href="javascript:(function(){const p=`You are EBITDA-Claude, a specialized AI assistant for developing a private equity simulation game.%0A%0ACore Context:%0A- Project: PE firm simulation (EBITDA)%0A- Tech: TypeScript/React, Rust WASM, Go%0A- Performance: 60 FPS, 10000+ entities%0A- Deterministic simulation required%0A%0AAcknowledge with: 'EBITDA-Claude initialized. Ready to build high-performance PE simulation systems.'`;const i=document.querySelector('div[contenteditable=%22true%22]')||document.querySelector('textarea');if(i){i.tagName==='TEXTAREA'?i.value=p.replace(/%0A/g,'\n'):i.innerText=p.replace(/%0A/g,'\n');i.dispatchEvent(new Event('input',{bubbles:true}));i.focus();alert('✅ EBITDA System Prompt inserted!');}else{navigator.clipboard.writeText(p.replace(/%0A/g,'\n'));alert('📋 Prompt copied to clipboard! Paste in Claude.');}})();">
+                    🚀 Init EBITDA
+                </a>
+                <p class="description">Initialize Claude with EBITDA context</p>
+            </div>
+            
+            <div class="bookmarklet">
+                <div class="icon">📅</div>
+                <a href="javascript:(function(){const d=new Date().toISOString().split('T')[0];const p=`Daily Standup - ${d}%0A%0AYesterday:%0A- Completed: [WHAT]%0A%0AToday's Focus:%0A- Priority 1: [TASK]%0A%0AQuestions:%0A1. `;const i=document.querySelector('div[contenteditable=%22true%22]')||document.querySelector('textarea');if(i){i.tagName==='TEXTAREA'?i.value=p.replace(/%0A/g,'\n'):i.innerText=p.replace(/%0A/g,'\n');i.dispatchEvent(new Event('input',{bubbles:true}));i.focus();}else{navigator.clipboard.writeText(p.replace(/%0A/g,'\n'));alert('📋 Copied!');}})();">
+                    📅 Morning Standup
+                </a>
+                <p class="description">Daily standup template</p>
+            </div>
+            
+            <div class="bookmarklet">
+                <div class="icon">🔍</div>
+                <a href="javascript:(function(){const p=`Review this EBITDA game code for:%0A- Performance (must maintain 60 FPS)%0A- Memory leaks%0A- Determinism issues%0A- Best practices%0A%0A\`\`\`typescript%0A// PASTE CODE HERE%0A\`\`\``;const i=document.querySelector('div[contenteditable=%22true%22]')||document.querySelector('textarea');if(i){i.tagName==='TEXTAREA'?i.value=p.replace(/%0A/g,'\n'):i.innerText=p.replace(/%0A/g,'\n');i.dispatchEvent(new Event('input',{bubbles:true}));i.focus();}else{navigator.clipboard.writeText(p.replace(/%0A/g,'\n'));alert('📋 Copied!');}})();">
+                    🔍 Code Review
+                </a>
+                <p class="description">Request thorough code review</p>
+            </div>
+            
+            <div class="bookmarklet">
+                <div class="icon">⚡</div>
+                <a href="javascript:(function(){const p=`Optimize this EBITDA game code for performance while maintaining determinism and 60 FPS:%0A%0A\`\`\`typescript%0A// PASTE CODE HERE%0A\`\`\`%0A%0AFocus on:%0A- Algorithm complexity%0A- Memory allocations%0A- Caching opportunities`;const i=document.querySelector('div[contenteditable=%22true%22]')||document.querySelector('textarea');if(i){i.tagName==='TEXTAREA'?i.value=p.replace(/%0A/g,'\n'):i.innerText=p.replace(/%0A/g,'\n');i.dispatchEvent(new Event('input',{bubbles:true}));i.focus();}else{navigator.clipboard.writeText(p.replace(/%0A/g,'\n'));alert('📋 Copied!');}})();">
+                    ⚡ Optimize
+                </a>
+                <p class="description">Performance optimization</p>
+            </div>
+            
+            <div class="bookmarklet">
+                <div class="icon">🐛</div>
+                <a href="javascript:(function(){const p=`Debug this EBITDA game issue:%0A%0AError: [ERROR MESSAGE]%0AStack: [STACK TRACE]%0A%0ACode:%0A\`\`\`typescript%0A// PASTE CODE HERE%0A\`\`\`%0A%0AWhat's the root cause and fix?`;const i=document.querySelector('div[contenteditable=%22true%22]')||document.querySelector('textarea');if(i){i.tagName==='TEXTAREA'?i.value=p.replace(/%0A/g,'\n'):i.innerText=p.replace(/%0A/g,'\n');i.dispatchEvent(new Event('input',{bubbles:true}));i.focus();}else{navigator.clipboard.writeText(p.replace(/%0A/g,'\n'));alert('📋 Copied!');}})();">
+                    🐛 Debug
+                </a>
+                <p class="description">Bug investigation helper</p>
+            </div>
+            
+            <div class="bookmarklet">
+                <div class="icon">🧪</div>
+                <a href="javascript:(function(){const p=`Generate comprehensive tests for this EBITDA game code:%0A%0A\`\`\`typescript%0A// PASTE CODE HERE%0A\`\`\`%0A%0AInclude:%0A- Unit tests%0A- Edge cases%0A- Determinism verification%0A- Performance benchmarks`;const i=document.querySelector('div[contenteditable=%22true%22]')||document.querySelector('textarea');if(i){i.tagName==='TEXTAREA'?i.value=p.replace(/%0A/g,'\n'):i.innerText=p.replace(/%0A/g,'\n');i.dispatchEvent(new Event('input',{bubbles:true}));i.focus();}else{navigator.clipboard.writeText(p.replace(/%0A/g,'\n'));alert('📋 Copied!');}})();">
+                    🧪 Test Gen
+                </a>
+                <p class="description">Generate comprehensive tests</p>
+            </div>
+            
+            <div class="bookmarklet">
+                <div class="icon">✨</div>
+                <a href="javascript:(function(){const p=`Design and implement [FEATURE_NAME] for the EBITDA game:%0A%0ARequirements:%0A- [REQUIREMENT_1]%0A- [REQUIREMENT_2]%0A%0AConstraints:%0A- Must be deterministic%0A- Max 200 lines%0A- Performance: O(n) or better%0A- Maintain 60 FPS`;const i=document.querySelector('div[contenteditable=%22true%22]')||document.querySelector('textarea');if(i){i.tagName==='TEXTAREA'?i.value=p.replace(/%0A/g,'\n'):i.innerText=p.replace(/%0A/g,'\n');i.dispatchEvent(new Event('input',{bubbles:true}));i.focus();}else{navigator.clipboard.writeText(p.replace(/%0A/g,'\n'));alert('📋 Copied!');}})();">
+                    ✨ Feature
+                </a>
+                <p class="description">Feature planning template</p>
+            </div>
+            
+            <div class="bookmarklet">
+                <div class="icon">🏗️</div>
+                <a href="javascript:(function(){const p=`Design the architecture for [SYSTEM] in the EBITDA game:%0A%0AScale: [REQUIREMENT]%0APerformance: 60 FPS with 10k entities%0ADeterministic: Yes%0A%0AProvide:%0A1. Architecture overview%0A2. Key interfaces%0A3. Data flow%0A4. Implementation approach`;const i=document.querySelector('div[contenteditable=%22true%22]')||document.querySelector('textarea');if(i){i.tagName==='TEXTAREA'?i.value=p.replace(/%0A/g,'\n'):i.innerText=p.replace(/%0A/g,'\n');i.dispatchEvent(new Event('input',{bubbles:true}));i.focus();}else{navigator.clipboard.writeText(p.replace(/%0A/g,'\n'));alert('📋 Copied!');}})();">
+                    🏗️ Architect
+                </a>
+                <p class="description">System architecture design</p>
+            </div>
+        </div>
+        
+        <div class="keyboard-shortcuts">
+            <h3>⌨️ Tampermonkey Keyboard Shortcuts (After Installing Extension)</h3>
+            <div class="shortcuts-grid">
+                <div class="shortcut"><span class="key">Alt+I</span> Init EBITDA</div>
+                <div class="shortcut"><span class="key">Alt+M</span> Morning Standup</div>
+                <div class="shortcut"><span class="key">Alt+R</span> Code Review</div>
+                <div class="shortcut"><span class="key">Alt+O</span> Optimize</div>
+                <div class="shortcut"><span class="key">Alt+B</span> Debug</div>
+                <div class="shortcut"><span class="key">Alt+T</span> Test Generation</div>
+                <div class="shortcut"><span class="key">Alt+F</span> Feature Planning</div>
+                <div class="shortcut"><span class="key">Alt+A</span> Architecture</div>
+            </div>
+        </div>
+        
+        <div class="warning">
+            <strong>⚠️ Note:</strong> If dragging doesn't work, right-click each button and select "Bookmark This Link" or "Add to Bookmarks", then save to your Bookmarks Bar.
+        </div>
+        
+        <div class="success" id="success-message">
+            <strong>✅ Success!</strong> Bookmarklet added! Now go to Claude.ai and click it from your bookmarks bar.
+        </div>
+    </div>
+    
+    <script>
+        // Show success message when a bookmarklet is clicked
+        document.querySelectorAll('.bookmarklet a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Don't prevent default - let the bookmarklet work
+                setTimeout(() => {
+                    document.getElementById('success-message').style.display = 'block';
+                    setTimeout(() => {
+                        document.getElementById('success-message').style.display = 'none';
+                    }, 5000);
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>

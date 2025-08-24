@@ -1,0 +1,97 @@
+{
+  "version": "0.1.0",
+  "events": [
+    {
+      "id": "hostile_bid_public_v1",
+      "rarity": "rare",
+      "trigger": {
+        "type": "public_underpriced",
+        "min_gap_x": 0.7,
+        "min_fragility": 60,
+        "max_board_gov": 45
+      },
+      "timer_days": 7,
+      "text": "A rival fund launches a hostile at {multiple}\u00d7.",
+      "choices": [
+        {
+          "id": "adopt_pill",
+          "label": "Adopt poison pill",
+          "effects": {
+            "timer_days": "+14",
+            "momentum_mult": -0.1,
+            "lp_trust": -2
+          }
+        },
+        {
+          "id": "white_knight",
+          "label": "Seek white knight",
+          "spawn_event": "white_knight_v1"
+        },
+        {
+          "id": "raise_bid",
+          "label": "Raise bid (re-gear)",
+          "effects": {
+            "leverage": "+0.8",
+            "lender_trust": -5
+          }
+        },
+        {
+          "id": "accept",
+          "label": "Accept",
+          "effects": {
+            "exit_now": true,
+            "lp_trust": -1,
+            "optics": -10
+          }
+        }
+      ],
+      "touches": [
+        "Fragility",
+        "LPTrust",
+        "Momentum",
+        "Optics"
+      ]
+    },
+    {
+      "id": "toehold_greenmail_v1",
+      "rarity": "uncommon",
+      "trigger": {
+        "type": "13D_toehold",
+        "min_stake_pct": 6,
+        "max_board_gov": 50
+      },
+      "timer_days": 5,
+      "text": "A raider files 13D and demands changes or payment.",
+      "choices": [
+        {
+          "id": "standstill",
+          "label": "Negotiate standstill",
+          "effects": {
+            "cash_pct_equity": -1.2,
+            "lp_trust": -1
+          }
+        },
+        {
+          "id": "recap",
+          "label": "Special dividend recap",
+          "effects": {
+            "fragility": "+15"
+          }
+        },
+        {
+          "id": "pacman",
+          "label": "Pac-Man defense (Hard)",
+          "effects": {
+            "lender_trust": -4,
+            "fees_bps": "+75"
+          }
+        }
+      ],
+      "touches": [
+        "Fragility",
+        "LPTrust",
+        "LenderTrust"
+      ]
+    }
+  ]
+}

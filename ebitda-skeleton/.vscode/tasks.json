@@ -1,0 +1,73 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Claude: Review Current File",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-ExecutionPolicy", "Bypass",
+                "-File", "${workspaceFolder}/../claude-power/scripts/code-helper.ps1",
+                "review",
+                "${file}"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Claude: Debug Current File",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-ExecutionPolicy", "Bypass",
+                "-File", "${workspaceFolder}/../claude-power/scripts/code-helper.ps1",
+                "error",
+                "${file}"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Claude: Show Recent Changes",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "${workspaceFolder}/../claude-power/scripts/code-helper.sh",
+                "changes"
+            ],
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "-ExecutionPolicy", "Bypass",
+                    "-Command",
+                    "cd '${workspaceFolder}'; git diff HEAD~1 | Set-Clipboard; Write-Host '✅ Changes copied to clipboard'"
+                ]
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Claude: Copy TypeScript Errors",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-ExecutionPolicy", "Bypass",
+                "-Command",
+                "cd '${workspaceFolder}'; npx tsc --noEmit 2>&1 | Set-Clipboard; Write-Host '✅ TypeScript errors copied'"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

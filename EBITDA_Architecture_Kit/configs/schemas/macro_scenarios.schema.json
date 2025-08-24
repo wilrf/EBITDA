@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Macro Scenarios",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "scenario_id": {
+            "type": "string"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "frequency": {
+            "type": "string",
+            "enum": [
+              "weekly",
+              "monthly",
+              "quarterly"
+            ]
+          },
+          "duration_steps": {
+            "type": "integer"
+          },
+          "dates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "series": {
+            "type": "object"
+          },
+          "exogenous_events": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "scenario_id",
+          "display_name",
+          "start_date",
+          "frequency",
+          "duration_steps",
+          "series"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "scenarios"
+  ]
+}

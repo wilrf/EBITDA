@@ -1,0 +1,31 @@
+{
+  "version": "0.1.0",
+  "macro_to_game": {
+    "M_formula": "0.5*ER + 0.3*G - 0.02*VX",
+    "R_formula": "0.015*VX + 0.002*(HY-400)"
+  },
+  "pricing": {
+    "spread_curve_bps": {
+      "b0": 300
+    },
+    "fees": {
+      "oid_base_pct": 1.0
+    }
+  },
+  "defaults": {
+    "breach_targets_annual_at_5x": {
+      "easy": [
+        0.02,
+        0.04
+      ],
+      "medium": [
+        0.05,
+        0.08
+      ],
+      "hard": [
+        0.1,
+        0.15
+      ]
+    }
+  }
+}

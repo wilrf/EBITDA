@@ -1,0 +1,38 @@
+{
+  "version": "0.1.0",
+  "archetypes": [
+    {
+      "id": "multiple_maxer",
+      "snipe_odds": {
+        "base": 0.22,
+        "hot_sector_bonus": 0.1
+      },
+      "hostile_pref": 0.4,
+      "leak_rate": 0.35,
+      "discipline": 0.3,
+      "legal_aggressiveness": 0.5
+    },
+    {
+      "id": "discipline_bot",
+      "snipe_odds": {
+        "base": 0.1,
+        "hot_sector_bonus": 0.05
+      },
+      "hostile_pref": 0.1,
+      "leak_rate": 0.1,
+      "discipline": 0.8,
+      "legal_aggressiveness": 0.2
+    },
+    {
+      "id": "raider_aggressive",
+      "snipe_odds": {
+        "base": 0.25,
+        "hot_sector_bonus": 0.1
+      },
+      "hostile_pref": 0.7,
+      "leak_rate": 0.4,
+      "discipline": 0.3,
+      "legal_aggressiveness": 0.8
+    }
+  ]
+}
